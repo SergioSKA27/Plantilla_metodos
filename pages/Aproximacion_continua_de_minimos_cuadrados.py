@@ -119,7 +119,6 @@ aproxfunc = sy.lambdify(list(fx.free_symbols)[0],method[0])
 plo.add_trace(gro.Scatter(x = np.linspace(interval[0],interval[1],1000),y=func(np.linspace(interval[0],interval[1],1000)),name='Función', marker_color='rgba(152, 0, 0, .8)'))
 plo.add_trace(gro.Scatter(x=np.linspace(interval[0],interval[1],1000),y=aproxfunc(np.linspace(interval[0],interval[1],1000)),name='Aproximación',fill='tonexty'))
 st.plotly_chart(plo)
-st.pyplot(method[1])
 
 
 st.subheader('Evaluador de a Aproximación: ')

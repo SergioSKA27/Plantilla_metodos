@@ -285,4 +285,4 @@ for i in range(0, len(method[0])):
 plo.add_trace(gro.Scatter(x=x,y=fx,mode='markers',name='Puntos'))
 plo.update_layout(title='Grafica de la Interpolación')
 st.plotly_chart(plo)
-st.pyplot(method[1])
+

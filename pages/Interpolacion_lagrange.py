@@ -149,4 +149,4 @@ plo.add_trace(gro.Scatter(x=x,y=fx, marker_color='rgba(152, 0, 0, .8)',name='Dat
 plo.update_layout(title='Grafica de la Interpolación')
 st.plotly_chart(plo)
 
-st.pyplot(method[1])
+

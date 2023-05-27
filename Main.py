@@ -11,7 +11,7 @@ import base64
 file1_ = open("./Im1.png", "rb")
 
 
-
+#Portada
 contents1 = file1_.read()
 data_url1 = base64.b64encode(contents1).decode("utf-8")
 file1_.close()
@@ -39,24 +39,8 @@ st.subheader('''''')
 
 st.subheader('''
         Presenta \n
-        López Martínez Sergio Demis  316262048\n
-        Fernandez Castañeda Alexia  422068044
+        *Nombre de los Integrantes
 ''')
-
-
-
-file_ = open("./Im3.gif", "rb")
-
-
-
-contents = file_.read()
-data_url = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-st.markdown(
-    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-    unsafe_allow_html=True,
-)
 
 
 

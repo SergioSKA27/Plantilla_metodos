@@ -36,24 +36,6 @@ st.title(':blue[Método de Quasi-Newton(BFGS)]')
 st.subheader(':blue[Descripción del método]')
 
 
-desc = r'''
- Inicializar $x_0$ and $H_0$ \FOR{$k=0,1,2,...$}
- Calcular el vector de gradiente  $g_k$
-  Determinar la dirección de búsqueda  $p_k$ resolviendo $H_kp_k = -g_k$
- Elegir el tamaño $a_k$ usando el método de búsqueda
- Actualizar el punto $x_{k+1} = x_k + a_kp_k$
- Operar el vestor $s_k = x_{k+1} - x_k$ y $y_k = g_{k+1} - g_k$
- Actualizar la aproximación del vector Hessiano usando:
-H_{k+1} = (I - \rho_k s_k y_k^T)H_k(I - \rho_k y_k s_k^T) + \rho_k s_k s_k^T
-
-Aquí, $x_k$representa la posición actual en iteración$k$,
-$g_k$  representa el vector de gradiente en $x_k$, $H_k$
-representa la aproximación de la matriz de Hesse inversa en $x_k$,
-$\rho_k$es el tamaño del paso para actualizar  $H_k$ en iteración  $k$,
- and $p_k$ es la dirección de búsqueda en iteration $k$.
-
-'''
-st.latex(desc)
 
 st.subheader(':blue[Ejemplo]')
 
@@ -121,3 +103,7 @@ except:
 
 maxiter = st.slider('Maximo de Iteraciones',10,1000,10)
 
+
+
+
+#COLOCA TU METODO AQUI y PASA LA  FUNCION ALOJADA EN fx

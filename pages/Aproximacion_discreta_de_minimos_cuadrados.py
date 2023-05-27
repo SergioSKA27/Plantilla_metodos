@@ -165,4 +165,3 @@ plo.add_trace(gro.Scatter(x=x,y=fx,name='Datos'))
 plo.add_trace(gro.Scatter(x=np.linspace(min(x)-10,max(x)+10,1000),y=func(np.linspace(min(x)-10,max(x)+10,1000)),name='Aproximación'))
 
 st.plotly_chart(plo)
-#st.pyplot(method[1])

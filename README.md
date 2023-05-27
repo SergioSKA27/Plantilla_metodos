@@ -5,7 +5,7 @@ Plantilla para proyecto de metodos numericos II
 
 Contiene algunos metodos programados con graficación incluida solo falta completar los faltantes(BFGS, Integracion, Derivacion), tambien puedes agregar tus propios metodo o modificar cualquier parte del codigo.
 
-##Graficacion con plotly para graficar una funcion crea una lista con los valores de $x,y$ y $z$ segun sea el caso crea un objeto con 
+## Graficacion con plotly para graficar una funcion crea una lista con los valores de $x,y$ y $z$ segun sea el caso crea un objeto con 
 
 plo = gro.Figure()
 

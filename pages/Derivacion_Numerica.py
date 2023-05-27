@@ -56,7 +56,7 @@ if len(fx.free_symbols)<= 2:
         p =sy.plot(fx,show=False)
         pl = get_sympy_subplots(p)
 
-        st.pyplot(pl)
+
 
     if  len(fx.free_symbols) == 2:
         func = sy.lambdify(list(fx.free_symbols),fx)
@@ -68,7 +68,7 @@ if len(fx.free_symbols)<= 2:
         p =plot3d(fx,show=False)
         pl = get_sympy_subplots(p)
 
-        st.pyplot(pl)
+
 
 
 #COLOCA TU METODO AQUI y PASA LA  FUNCION ALOJADA EN fx
